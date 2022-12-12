@@ -39,7 +39,7 @@ function initMap(): void {
 
       //TODO: USE GOOGLE GEOCODING TO TURN COORDS ARRAY INTO A STRING OF A PLACE VALUE, THEN SEND IT USING WS.SEND
       //
-      fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${coords[0]},${coords[1]}&key=AIzaSyC4PWmV-wIsONQSz81Q2HfdAyjVTnVDDHc`)
+      fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${coords[0]},${coords[1]}&key={INSERT_API_KEY_HERE}`)
           .then(response => response.json() )
           .then(data => {
             ws.send(data.results[0].formatted_address);
