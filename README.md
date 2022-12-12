@@ -11,3 +11,14 @@ Need Node.js.
 npm install
 npm i isomorphic-ws //necessary for WebSocket
 npm start //to launch the project
+
+## Explanation of Program Logic:
+3 main components:
+
+1) WebSocket
+  -Used to mimic server/client relationship between NB-IoT & Web Client
+2) Reverse Geocode service
+  -Used to turn GPS coordinates into readable addresses for easy asset-management
+3) Maps service
+  -Used to constantly display & re-center GUI to show current coordinates
+  
